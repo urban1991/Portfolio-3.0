@@ -286,8 +286,8 @@ body {
 
 .header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(4, 49, 82, 0.6)), to(rgba(4, 29, 46, 0.7))), url(https://urban1991.github.io/Portfolio-3.0//img/header_keyboard.jpg);
-  background-image: linear-gradient(to left, rgba(4, 49, 82, 0.6), rgba(4, 29, 46, 0.7)), url(https://urban1991.github.io/Portfolio-3.0//img/header_keyboard.jpg);
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(4, 49, 82, 0.6)), to(rgba(4, 29, 46, 0.7))), url(https://urban1991.github.io/Portfolio-3.0/img/header_keyboard.jpg);
+  background-image: linear-gradient(to left, rgba(4, 49, 82, 0.6), rgba(4, 29, 46, 0.7)), url(https://urban1991.github.io/Portfolio-3.0/img/header_keyboard.jpg);
   background-size: cover;
   background-position: center;
   -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.7);
@@ -991,8 +991,8 @@ body {
   -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.7);
   position: relative;
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(4, 49, 82, 0.7)), to(rgba(4, 29, 46, 0.7))), url(https://urban1991.github.io/Portfolio-3.0//img/IMG_0449.jpeg);
-  background-image: linear-gradient(to left, rgba(4, 49, 82, 0.7), rgba(4, 29, 46, 0.7)), url(https://urban1991.github.io/Portfolio-3.0//img/IMG_0449.jpeg);
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(4, 49, 82, 0.7)), to(rgba(4, 29, 46, 0.7))), url(https://urban1991.github.io/Portfolio-3.0/img/IMG_0449.jpeg);
+  background-image: linear-gradient(to left, rgba(4, 49, 82, 0.7), rgba(4, 29, 46, 0.7)), url(https://urban1991.github.io/Portfolio-3.0/img/IMG_0449.jpeg);
   background-size: cover;
   background-position: center;
   padding: 2rem;
