@@ -1,0 +1,81 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        position: relative;
+        color: $color-font-white;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        font-size: 1.6rem;
+        border: none;
+        text-align: center;
+        background-color: rgba(#AAA9AD, .1);
+        cursor: pointer;
+        z-index: 10;
+
+        backface-visibility: hidden;
+        transition: all .1s .3s;
+
+    }
+    &:hover {
+        color: #000;
+        box-shadow: 0 1rem 2rem rgba(0,0,0, .2);
+    
+    }
+    &:active,
+    &:focus {
+        
+        box-shadow: 0 .5rem 1rem rgba(0,0,0, .2);
+    }
+    
+  
+    &::before {
+        content: "";
+        display: block;
+        z-index: -1;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: 3px;
+        background-color:rgba($color-font-white,.7);
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform .2s,
+                    width .3s cubic-bezier(1,0,0,1) .2s,
+                    background-color .1s;   
+                   
+    }
+
+    &:active::before {
+        background-color: $color-font-white;
+    }
+    
+
+  
+
+    
+    &:hover:before {
+        
+        transform: scaleY(1);
+        width: 100%;
+        
+    }
+
+    &--main {
+        display: block; 
+        width: 40%;
+    }
+
+    &--second {
+        box-shadow: $shadow-small;
+    }
+
+    &--animated {
+        animation: moveInBottom .7s .3s;
+        animation-fill-mode: backwards;
+    }
+
+}
+

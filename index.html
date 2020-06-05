@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML, CSS, JavaScript, React, Portfolio">
+        <meta name="author" content="Piotr Urbaniak">
+        <title>Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="sass/main.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="container" id="home">
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+        
+            <label for="nav-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a href="#aboutMe" class="navigation__link">About me</a></li>
+                    <li class="navigation__item"><a href="#technology" class="navigation__link">Stack</a></li>
+                    <li class="navigation__item"><a href="#projects" class="navigation__link">Projects</a></li>
+                    <li class="navigation__item"><a href="#contact" class="navigation__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <header class="header" >    
+            <nav class="social-media">
+                <ul class="social-media__list">
+                    <li class="social-media__item">
+                        <a href="https://www.facebook.com/" target="_blank" class="social-media__link">
+                            <span>Facebook</span>
+                            <svg class="social-media__icon social-media__icon--fb">
+                                <use xlink:href="img/sprite.svg#icon-facebook1"></use>                        
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="social-media__item">
+                        <a href="https://www.google.com/" target="_blank" class="social-media__link">
+                            <span>Google+</span>
+                            <svg class="social-media__icon social-media__icon--google">
+                                <use xlink:href="img/sprite.svg#icon-google"></use>                        
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="social-media__item">
+                        <a href="https://github.com/urban1991" target="_blank" class="social-media__link">
+                            <span>Github</span>
+                            <svg class="social-media__icon social-media__icon--github">
+                                <use xlink:href="img/sprite.svg#icon-github2"></use>                        
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="social-media__item">
+                        <a href="https://pl.linkedin.com/" target="_blank" class="social-media__link">
+                            <span>Linkedin</span>
+                            <svg class="social-media__icon social-media__icon--in">
+                                <use xlink:href="img/sprite.svg#icon-linkedin2"></use>        
+                                              
+                            </svg>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Piotr</span>
+                    <span class="heading-primary--main">Urbaniak</span>
+                    <span class="heading-primary--sub">Web developer</span>
+                </h1>
+                
+                <a href="#aboutMe" class="btn btn--main btn--animated">Scroll down</a>
+                
+            </div>  
+        </header>
+        <main>
+            <section class="section-about" id="aboutMe">        
+                <h2 class="heading-secondary">
+                    About me 
+                </h2>
+
+                <div class="about">
+                    <h3 class="heading-tertiary u-margin-bottom-medium">Hello, my name is Peter. Welcome in my first  portfolio</h3>
+                    <p class="about__text">
+                        Do tej pory pracowałem na własny rachunek prowadząc własny sklep internetowy. Swoją przygodę z programowaniem
+                        zacząłem od języka Java, następnie w ramach kursu programowania CodersCamp przesiadłem się na JavaScript. Chciałbym rozwijać się w
+                        kierunku web developmentu poszerzając wiedzę i zyskując cenne doświadczenie na nowej ścieżce kariery. 
+                        Poniżej przedstawiam technologie, które poznałem oraz kilka pierwszych projektów stworzonych przy ich użyciu.
+                    </p>
+                    
+                    
+                    <a href="./public/PiotrUrbaniakCV.pdf" target="_blank" class="btn btn--main btn--animated">Check CV</a>
+                    
+                </div>
+            </section>
+            <section class="section-stack" id="technology">
+                <h2 class="heading-secondary">
+                    My technology stack
+                </h2> 
+                <div class="technology__box">     
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <svg class="card__icon">
+                                <use xlink:href="img/sprite.svg#icon-html5"></use>                        
+                            </svg>
+                            <h3 class="card__heading">HTML5</h3>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__details">
+                                    <ul>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <svg class="card__icon">
+                                <use xlink:href="img/sprite.svg#icon-css3"></use>                        
+                            </svg>
+                            <h3 class="card__heading">CSS3</h3>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__details">
+                                    <ul>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <svg class="card__icon">
+                                <use xlink:href="img/sprite.svg#icon-sass"></use>                        
+                            </svg>
+                            <h3 class="card__heading">SASS</h3>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__details">
+                                    <ul>
+                                        <li>BEM</li>
+                                        <li>Nesting</li>
+                                        <li>Mixins</li>
+                                        <li>Functions</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <svg class="card__icon">
+                                <use xlink:href="img/sprite.svg#icon-javascript"></use>                        
+                            </svg>
+                            <h3 class="card__heading">Javascript</h3>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-4">
+                            <div class="card__cta">
+                                <div class="card__details">
+                                    <ul>
+                                        <li>Ecma 6</li>
+                                        <li>Promises</li>
+                                        <li>Webpack</li>
+                                        <li>jQuery</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <svg class="card__icon">
+                                <use xlink:href="img/sprite.svg#icon-react"></use>                        
+                            </svg>
+                            <h3 class="card__heading">React</h3>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-5">
+                            <div class="card__cta">
+                                <div class="card__details">
+                                    <ul>
+                                        <li>JSX</li>
+                                        <li>React Hooks</li>
+                                        <li>State and props</li>
+                                        <li>React portals</li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <svg class="card__icon">
+                                <use xlink:href="img/sprite.svg#icon-redux"></use>                        
+                            </svg>
+                            <h3 class="card__heading">redux</h3>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-6">
+                            <div class="card__cta">
+                                <div class="card__details">
+                                    <ul>
+                                        <li>Redux thunk</li>
+                                        <li>Redux forms</li>
+                                        <li>Redux store</li>
+                                        <li>some text</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <svg class="card__icon">
+                                <use xlink:href="img/sprite.svg#icon-node-dot-js"></use>                        
+                            </svg>
+                            <h3 class="card__heading">Node js</h3>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-7">
+                            <div class="card__cta">
+                                <div class="card__details">
+                                    <ul>
+                                        <li>npm</li>
+                                        <li>postman</li>
+                                        <li>MongoDB</li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <svg class="card__icon">
+                                <use xlink:href="img/sprite.svg#icon-git"></use>                        
+                            </svg>
+                            <h3 class="card__heading">git</h3>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-8">
+                            <div class="card__cta">
+                                <div class="card__details">
+                                    <ul>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__side card__side--front">
+                            <svg class="card__icon">
+                                <use xlink:href="img/sprite.svg#icon-github"></use>                        
+                            </svg>
+                            <h3 class="card__heading">github</h3>
+                        </div>
+                        <div class="card__side card__side--back card__side--back-9">
+                            <div class="card__cta">
+                                <div class="card__details">
+                                    <ul>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                        <li>some text</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 
+                </div>
+            </section>
+
+            <section class="section-projects" id="projects">
+                <h2 class="heading-secondary">
+                    Projects
+                </h2>
+                <div class="projects__box">
+                    <div class="projects__card">
+                        <div class="projects__image-box">
+                            <a href="#" ><img src="./img/bakery.jpg" alt="Bakery" class="projects__image"></a>
+                            <a href="#" class="projects__link"><span>See more</span></a>
+                        </div>
+                        <div class="projects__content-box">
+                            <h3 class="heading-tertiary">Bakery homepage</h3>
+                            <p class="projects__content">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, reiciendis. Ullam tempora debitis dolores quis, iure corrupti facilis voluptatum cum recusandae architecto odit illum vero iste amet aspernatur ratione. Repellat.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="projects__card">
+                        <div class="projects__image-box">
+                            <a href="#"><img src="./img/coffe_shop.jpg" alt="Coffee_shop" class="projects__image"></a>
+                            <a href="#" class="projects__link"><span>See more</span></a>
+                        </div>
+                        <div class="projects__content-box">
+                            <h3 class="heading-tertiary">Mobile cafe </h3>
+                            <p class="projects__content">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, reiciendis. Ullam tempora debitis dolores quis, iure corrupti facilis voluptatum cum recusandae architecto odit illum vero iste amet aspernatur ratione. Repellat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="projects__card">
+                        <div class="projects__image-box">
+                           <a href="#"> <img src="./img/weather_app.jpg" alt="weather_app" class="projects__image"></a>
+                           <a href="#" class="projects__link"><span>See more</span></a>
+                        </div>
+                        <div class="projects__content-box">
+                            <h3 class="heading-tertiary">Weather App</h3>
+                            <p class="projects__content">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, reiciendis. Ullam tempora debitis dolores quis, iure corrupti facilis voluptatum cum recusandae architecto odit illum vero iste amet aspernatur ratione. Repellat.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+            <section class="section-contact" id="contact">
+                <h2 class="heading-secondary">
+                    Contact with me
+                </h2>
+
+                <div class="contact">
+                    <div class="contact__form">
+                        <form action="#" class="form">
+                            
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+
+                            <div class="form__group">
+                                <textarea class="form__input form__input--textarea" placeholder="Your message" id="message" required></textarea>
+                                <label for="message" class="form__label">Your message</label>
+                            </div>
+
+                            <div class="form__group">
+                                <button class="btn btn--second btn--animated ">Send &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+
+            </section>
+            <footer class="footer">
+                <div class="footer__container">
+                    <div class="footer__navigation">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a href="#home" class="footer__link">Home</a></li>
+                            <li class="footer__item"><a href="#aboutMe" class="footer__link">About</a></li>
+                            <li class="footer__item"><a href="#technology" class="footer__link">Technology</a></li>
+                            <li class="footer__item"><a href="#projects" class="footer__link">Projects</a></li>
+                            <li class="footer__item"><a href="#contact" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                   
+                </div>
+                <p class="footer__copyright">&copy; All rights reserved 2020</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

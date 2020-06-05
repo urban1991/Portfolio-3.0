@@ -1,0 +1,90 @@
+.card {
+    // FUNCTIONALITY
+
+    -moz-perspective: 150rem;
+    perspective: 150rem;
+    position: relative;
+    height: 20rem;
+    margin: 4rem 2rem 2rem 2rem;
+
+    &__side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 20rem;
+        width: 20rem;
+        transition: all .6s ease .2s ; 
+        -webkit-backface-visibility: hidden;       
+        backface-visibility: hidden;
+        border-radius: 2px;
+        box-shadow:$shadow-big;
+        
+
+        &--front {
+            background-color: rgba(#c9ccd1, .1);
+           
+        }
+
+        &--back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: rotateY(180deg)  ;
+               
+        }
+    }
+   
+
+    &:hover &__side--front {
+        transform:rotateY(-180deg)  scale(1.25) ;
+        
+    }
+
+    
+    &:hover &__side--back {
+        transform:rotateY(0deg)   scale(1.5)  ; 
+        
+    }
+
+    // FRONT SIDE STYLING
+
+    &__icon {
+        height: 8rem;
+    }
+
+    &__heading {
+        text-align: center;
+        margin-top: 2rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+
+
+    // BACK SIDE STYLING
+
+    &__details {
+        padding: 3rem;
+
+        ul {
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+
+            li {
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                color: #fff;
+                
+                
+
+                &:not(:last-child) {
+                    border-bottom: 1px dotted grey;
+                }
+            }
+        }
+    }
+
+}
+
