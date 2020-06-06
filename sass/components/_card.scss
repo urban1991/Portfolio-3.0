@@ -5,7 +5,7 @@
     perspective: 150rem;
     position: relative;
     height: 20rem;
-    margin: 4rem 2rem 2rem 2rem;
+    margin: 4rem 3rem 2rem 2rem;
 
     &__side {
         display: flex;
@@ -80,7 +80,7 @@
                 
 
                 &:not(:last-child) {
-                    border-bottom: 1px dotted grey;
+                    border-bottom: 1px dotted #c9ccd1;
                 }
             }
         }

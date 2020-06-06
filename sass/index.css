@@ -12,6 +12,24 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
 /*
 0 - 600px:      Phone
 600 - 900px:    Tablet portrait
@@ -19,7 +37,7 @@ html {
 [1200 - 1800] is where our normal styles apply
 1800px + :      Big desktop
 
-$breakpoint arguement choices:
+$breakpoint argument choices:
 - phone
 - tab-port
 - tab-land
@@ -301,10 +319,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.header__text-box {
-  width: 50%;
 }
 
 .footer {
@@ -737,7 +751,7 @@ body {
           perspective: 150rem;
   position: relative;
   height: 20rem;
-  margin: 4rem 2rem 2rem 2rem;
+  margin: 4rem 3rem 2rem 2rem;
 }
 
 .card__side {
@@ -814,7 +828,7 @@ body {
 }
 
 .card__details ul li:not(:last-child) {
-  border-bottom: 1px dotted grey;
+  border-bottom: 1px dotted #c9ccd1;
 }
 
 .form {
