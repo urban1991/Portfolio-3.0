@@ -34,7 +34,6 @@
 .section-contact {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   padding: 2rem;
   margin-bottom: 3rem;
 
@@ -45,5 +44,17 @@
   width: 50%;
   border-radius: 4px;
   box-shadow: $shadow-big;
+
+  @include respond(tab-land) {
+    width: 60%;
+  }
+
+  @include respond(tab-port) {
+    width: 70%;
+  }
+
+  @include respond(phone) {
+    width: 100%;
+  }
 
 }

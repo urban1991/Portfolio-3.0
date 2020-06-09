@@ -66,6 +66,11 @@
     &--main {
         display: block; 
         width: 40%;
+
+        @include respond(phone) {
+            width: 60%;
+          }
+        
     }
 
     &--second {

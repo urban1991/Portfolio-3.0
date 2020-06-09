@@ -21,7 +21,11 @@ body {
     font-weight: 400;
     letter-spacing: 2.5rem;
     animation: moveInTop 1s ease-in-out ;
-    
+
+       @include respond(phone) {
+            letter-spacing: 1rem;
+            font-size: 4rem;
+        }
 
   }
 
@@ -32,6 +36,10 @@ body {
     letter-spacing: 1.85rem;
 
     animation: moveInTop 1s ease-in-out;
+
+    @include respond(phone) {
+      letter-spacing: .6rem;
+  }
   }
 
 
@@ -51,8 +59,22 @@ body {
   font-size: 4rem;
   text-transform: uppercase;
   font-weight: 400;
-  letter-spacing: .2rem;
+  letter-spacing: .6rem;
   padding: 2rem;
+  transition: all .3s ease-in-out;
+
+  @include respond(tab-port) {
+    font-size: 3.5rem;
+    letter-spacing: .4rem;
+  }
+
+  @include respond(phone) {
+    letter-spacing: .2rem;
+  }
+
+  &:hover {
+    letter-spacing: 1rem;
+  }
 }
 
 .heading-tertiary {
