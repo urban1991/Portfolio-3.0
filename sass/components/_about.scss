@@ -3,7 +3,6 @@
     background-color: rgba(#c9ccd1, .1);
     border-radius: 3px;
     clip-path: polygon(0 0, 100% 0, 84% 100%, 0 100%);
-    margin: 4rem;
     width: 60%;
     padding: 2rem 10rem 2rem 3rem;
     margin: 2rem;
@@ -12,6 +11,12 @@
     flex-direction: column;
     justify-content: center;
     align-self: flex-start;
+
+    @include respond(phone) {
+        width:auto;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        padding: 2rem;
+    }
     
     
 

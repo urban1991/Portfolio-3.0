@@ -14,12 +14,10 @@
         max-width: 35rem;
         height: 45rem;
         background-color: rgba(#c9ccd1, .2);
-
         margin: 3rem 1rem;
         padding: 2rem 1.5rem;
         box-shadow: $shadow-big;
         border-radius: 2px;
-        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -32,9 +30,7 @@
         top: -6rem;
         z-index: 2;
         box-shadow: $shadow-small;
-        
     }
-
 
     &__link {
         &,
@@ -47,19 +43,21 @@
             height: 100%;
             width: 100%;
             color: $color-font-white;
-            
-            
             text-decoration: none;
             text-transform: uppercase;
             opacity: 0;
-
             display: flex;
             align-items: center;
             justify-content: center;
 
             transition: all .3s ease-in-out ;
 
-
+            @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
+            
+            opacity: 1;
+                
+            }
         }
 
         & span {
@@ -73,9 +71,8 @@
     
     &__image-box:hover &__link {
         opacity: 1;
-        
-        
     }
+
     &__image-box:hover &__image {
         filter: blur(2px) brightness(80%);
     } 
@@ -87,23 +84,24 @@
         object-fit: cover;
         border-radius: 2px;
         transition: all .5s ease-in-out ;
-    
-        
-        &:hover {
-            
+
+        @media only screen and (max-width: 56.25em),
+            only screen and (hover: none) {
+
+            filter: blur(1px) brightness(40%);
         }
     }
 
     &__content-box {
-        
-        margin-top: -5rem;
+        margin-top: -6rem;
         padding: 1rem 1.5rem;
         text-align: center;
         transition: all ease-in-out .3s;
-       
     }
 
     &__content {
         font-size: 1.3rem;
+        margin-top: 1rem;
+        text-align: justify;
     } 
 }
